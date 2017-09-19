@@ -24,6 +24,9 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+.bold {
+  font-weight: bold;
+}
 
 #wrap > .container {
   padding: 60px 15px 0;
@@ -42,13 +45,15 @@ code {
 }
 
 .tweetbox {
-  padding: 7px;
+  padding: 15px 0 15px 0;
 }
 
 .tweetbox img {
+  clear: both;
   float: left;
   height: 48px;
   width: 48px;
+  padding-right: 7px;
   /*content:url("http://lorempixel.com/48/48");*/
 }
 .content {
@@ -56,4 +61,12 @@ code {
 }
 .content .by {
   font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+.currentTweet {
+  height: 50px;
 }
