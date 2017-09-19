@@ -3,14 +3,15 @@ const app = express();
 const nunjucks =  require('nunjucks')
 
 const PORT = 3000;
+const people = [{name: 'Full'}, {name: 'Stacker'}, {name: 'Son'}];
 
 app.use(function(req,res,next){
   console.log(req.method, req.url);
   next();
 });
 
-app.get('/',function(req,res){
-  res.send('Hello World!');
+app.get('/', function(req, res){
+  res.render( 'index', {title: 'Hall of Fame', people: people} );
 });
 
 app.listen(PORT, function(){
