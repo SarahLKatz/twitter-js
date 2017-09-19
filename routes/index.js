@@ -9,9 +9,15 @@ router.get('/', function (req, res) {
 });
 
 router.get('/users/:name', function(req, res) {
-  var name = req.params.name.slice(1);
+  var name = req.params.name;
   var list = tweetBank.find( { name: name } );
-  res.render( 'index', { list: list } );
+  //res.render( 'index', { list: list } );
+  res.render('index', { list: list });
+  // , function(err, tweet) {
+  //   if (err) throw err;
+  //   res.send(tweet);
+  // });
 });
+
 
 module.exports = router;
