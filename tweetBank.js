@@ -3,7 +3,7 @@ const _ = require('lodash');
 const data = [];
 
 function add (name, content) {
-  data.push({ name: name, content: content });
+  data.push({ name: name, content: content, picture: 'https://loremflickr.com/48/48?random=' + Math.floor(Math.random()*10) });
 }
 
 function list () {
