@@ -4,7 +4,7 @@ let idCount = 1;
 const data = [{name: 'David McQueue', content: 'I am a tweet. #OrAmI #WeirdHashtag', picture: 'https://loremflickr.com/48/48?random=15', id: 0}];
 
 function add (name, content) {
-  data.push({ name: name, content: content, picture: 'https://loremflickr.com/48/48?random=' + Math.floor(Math.random() * 10), id: idCount++});
+  data.push({ name: name, content: content, picture: 'https://loremflickr.com/48/48?random=' + Math.floor(Math.random() * 100), id: idCount++});
 }
 
 function list () {
