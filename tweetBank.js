@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-const data = [];
+const data = [{name: 'David McQueue', content: 'I am a tweet. #OrAmI #WeirdHashtag', picture: 'https://loremflickr.com/48/48?random=15'}];
 
 function add (name, content) {
   data.push({ name: name, content: content, picture: 'https://loremflickr.com/48/48?random=' + Math.floor(Math.random()*10) });
@@ -34,5 +34,3 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-
-console.log(data);
