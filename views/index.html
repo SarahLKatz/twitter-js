@@ -20,7 +20,7 @@
           <div class="currentTweet">
             <img src='{{tweet.picture}}' />
             <li class="bold"><a href="/users/{{tweet.name}}">{{tweet.name}}</a></li>
-            <li>{{tweet.content}}</li>
+            <li><a href="/tweets/{{tweet.id}}">{{tweet.content}}</a></li>
           </div>
       {% endfor %}
       <div>
